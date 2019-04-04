@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Sports</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script
+        src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+
+
+        <script src="app.js"></script>
+    </head>
+    <body>
+     <!-- <label>Year:</label>    -->
+     <select id="year" >
+            <!-- <option value="2017-2018-regular">2018</option>
+            <option value="2016-2017-regular">2017</option>
+            <option value="2015-2016-regular">2016</option> -->
+          </select>
+          <label>Games:</label>   
+
+     <select id="game" >
+            <!-- <option value="nfl">NFL</option>
+            <option value="nhl">NHL</option>
+            <option value="mlb">MLB</option>
+            <option value="nba">NBA</option> -->
+          </select>     
+
+          <button type="button" onclick= getGameData();>NFL FULL GAME SCHEDULE</button>
+
+          <button type="button" onclick= nhlDailyUpdate();>NHL daily schedule</button>
+          <button type="button" onclick= nflDailyUpdate();>NFL daily schedule</button>
+          <button type="button" onclick= nbaDailyUpdate();>NBA daily schedule</button>
+          <button type="button" onclick= mlbDailyUpdate();>MLB daily schedule</button>
+    <div id="data" ></div>    
+
+
+</html>
